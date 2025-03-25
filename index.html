@@ -1,103 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>G.N-Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.N Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic Reset */
+        body, h1, h2, p, ul, li {
             margin: 0;
             padding: 0;
-            background-color: #84a6ee;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: maroon;
-            color: #fff;
+            background-color: #333;
+            color: white;
+            padding: 20px;
             text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
         }
 
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
         .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
         }
 
         nav {
-            background-color: #555;
-            color: #fff;
-            text-align: center;
+            background-color: #444;
+            padding: 10px;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
-            margin: 0 20px;
+            margin: 0 15px;
         }
 
         nav ul li a {
+            color: white;
             text-decoration: none;
-            color: #fff;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
         }
 
         .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <!-- Add your profile picture here -->
             <img src="./pic.jpg" alt="Your Profile Picture" class="profile-picture">
             <h1>G.NIVETHA</h1>
-            <p> Trainer</p></p>
+            <p>Trainer</p>
         </div>
     </header>
 
@@ -108,32 +102,54 @@
             <li><a href="#skills">My Skills</a></li>
             <li><a href="#projects">My Projects</a></li>
             <li><a href="#resume">My CV</a></li>
-           
         </ul>
     </nav>
 
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p> I am a Network Specialist data science and a futuristic person passionate about advanced technology. I am driven by the desire to put technology to work for the greater good and empower individuals and businesses to benefit from the digital revolution. With over 2 years of experience in the field, I'm dedicated to staying up to date with the latest trends and innovations in the cyber security landscape. I'm also committed to helping others learn more about the importance of online security and how to stay safe online. </p>
-      </div>
+            <p>Welcome! I am G. Nivetha, a passionate trainer in various fields. I have years of experience in training individuals and teams to develop technical skills. I specialize in Java, Python, HTML, and more. My mission is to empower others with knowledge and inspire them to grow in their careers.</p>
+        </div>
     </section>
 
     <section id="education">
         <div class="section-content">
-            <h2>Education</h2>
-            <p>University of Madras- BSC CS</p>
-                <p>Peri  Arts And Science College - University of Madras </p>
-            
- 
-     </div>
+            <h2>My Education</h2>
+            <p>My educational background includes a degree in Computer Science, where I focused on software development, programming, and data analysis. I have also completed several certifications in Java and Python programming languages.</p>
+        </div>
     </section>
 
-    </section id="skills">
-        <div class ="section-content">
-    <h2>My Skills </h2>
-    <p> java </p>
-    <p> Python Programming</p>
-    <p> HTML </p>
+    <section id="skills">
+        <div class="section-content">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Java Programming</li>
+                <li>Python Programming</li>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>Data Analysis</li>
+                <li>Machine Learning</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I have worked on:</p>
+            <ul>
+                <li>Project 1: Java-based Inventory Management System</li>
+                <li>Project 2: Python-based Web Scraping Tool</li>
+                <li>Project 3: Personal Portfolio Website</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <h2>My CV</h2>
+            <p>You can download my resume from the link below:</p>
+            <a href="./resume.pdf" download>Download CV</a>
+        </div>
+    </section>
 </body>
 </html>
